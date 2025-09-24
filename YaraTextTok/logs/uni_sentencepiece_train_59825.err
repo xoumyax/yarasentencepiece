@@ -1,0 +1,290 @@
+sentencepiece_trainer.cc(178) LOG(INFO) Running command: --input=./synthetic250k_placeholder.txt --model_prefix=yaratexttokenizer_bart --vocab_size=52000 --model_type=unigram --character_coverage=1.0 --pad_id=0 --unk_id=1 --bos_id=2 --eos_id=3 --train_extremely_large_corpus=true
+sentencepiece_trainer.cc(78) LOG(INFO) Starts training with : 
+trainer_spec {
+  input: ./synthetic250k_placeholder.txt
+  input_format: 
+  model_prefix: yaratexttokenizer_bart
+  model_type: UNIGRAM
+  vocab_size: 52000
+  self_test_sample_size: 0
+  character_coverage: 1
+  input_sentence_size: 0
+  shuffle_input_sentence: 1
+  seed_sentencepiece_size: 1000000
+  shrinking_factor: 0.75
+  max_sentence_length: 4192
+  num_threads: 16
+  num_sub_iterations: 2
+  max_sentencepiece_length: 16
+  split_by_unicode_script: 1
+  split_by_number: 1
+  split_by_whitespace: 1
+  split_digits: 0
+  pretokenization_delimiter: 
+  treat_whitespace_as_suffix: 0
+  allow_whitespace_only_pieces: 0
+  required_chars: 
+  byte_fallback: 0
+  vocabulary_output_piece_score: 1
+  train_extremely_large_corpus: 1
+  seed_sentencepieces_file: 
+  hard_vocab_limit: 1
+  use_all_vocab: 0
+  unk_id: 1
+  bos_id: 2
+  eos_id: 3
+  pad_id: 0
+  unk_piece: <unk>
+  bos_piece: <s>
+  eos_piece: </s>
+  pad_piece: <pad>
+  unk_surface:  ⁇ 
+  enable_differential_privacy: 0
+  differential_privacy_noise_level: 0
+  differential_privacy_clipping_threshold: 0
+}
+normalizer_spec {
+  name: nmt_nfkc
+  add_dummy_prefix: 1
+  remove_extra_whitespaces: 1
+  escape_whitespaces: 1
+  normalization_rule_tsv: 
+}
+denormalizer_spec {}
+trainer_interface.cc(353) LOG(INFO) SentenceIterator is not specified. Using MultiFileSentenceIterator.
+trainer_interface.cc(185) LOG(INFO) Loading corpus: ./synthetic250k_placeholder.txt
+trainer_interface.cc(147) LOG(INFO) Loaded 1000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 2000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 3000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 4000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 5000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 6000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 7000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 8000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 9000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 10000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 11000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 12000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 13000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 14000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 15000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 16000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 17000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 18000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 19000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 20000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 21000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 22000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 23000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 24000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 25000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 26000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 27000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 28000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 29000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 30000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 31000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 32000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 33000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 34000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 35000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 36000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 37000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 38000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 39000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 40000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 41000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 42000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 43000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 44000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 45000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 46000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 47000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 48000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 49000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 50000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 51000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 52000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 53000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 54000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 55000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 56000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 57000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 58000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 59000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 60000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 61000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 62000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 63000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 64000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 65000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 66000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 67000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 68000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 69000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 70000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 71000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 72000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 73000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 74000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 75000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 76000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 77000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 78000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 79000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 80000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 81000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 82000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 83000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 84000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 85000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 86000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 87000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 88000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 89000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 90000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 91000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 92000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 93000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 94000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 95000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 96000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 97000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 98000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 99000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 100000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 101000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 102000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 103000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 104000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 105000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 106000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 107000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 108000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 109000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 110000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 111000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 112000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 113000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 114000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 115000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 116000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 117000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 118000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 119000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 120000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 121000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 122000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 123000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 124000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 125000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 126000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 127000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 128000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 129000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 130000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 131000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 132000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 133000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 134000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 135000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 136000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 137000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 138000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 139000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 140000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 141000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 142000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 143000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 144000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 145000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 146000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 147000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 148000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 149000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 150000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 151000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 152000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 153000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 154000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 155000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 156000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 157000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 158000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 159000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 160000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 161000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 162000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 163000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 164000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 165000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 166000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 167000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 168000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 169000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 170000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 171000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 172000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 173000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 174000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 175000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 176000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 177000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 178000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 179000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 180000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 181000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 182000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 183000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 184000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 185000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 186000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 187000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 188000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 189000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 190000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 191000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 192000000 lines
+trainer_interface.cc(147) LOG(INFO) Loaded 193000000 lines
+trainer_interface.cc(124) LOG(WARNING) Too many sentences are loaded! (193903275), which may slow down training.
+trainer_interface.cc(126) LOG(WARNING) Consider using --input_sentence_size=<size> and --shuffle_input_sentence=true.
+trainer_interface.cc(129) LOG(WARNING) They allow to randomly sample <size> sentences from the entire corpus.
+trainer_interface.cc(409) LOG(INFO) Loaded all 193903275 sentences
+trainer_interface.cc(425) LOG(INFO) Adding meta_piece: <pad>
+trainer_interface.cc(425) LOG(INFO) Adding meta_piece: <unk>
+trainer_interface.cc(425) LOG(INFO) Adding meta_piece: <s>
+trainer_interface.cc(425) LOG(INFO) Adding meta_piece: </s>
+trainer_interface.cc(430) LOG(INFO) Normalizing sentences...
+trainer_interface.cc(539) LOG(INFO) all chars count=16065171386
+trainer_interface.cc(550) LOG(INFO) Done: 100% characters are covered.
+trainer_interface.cc(560) LOG(INFO) Alphabet size=95
+trainer_interface.cc(561) LOG(INFO) Final character coverage=1
+trainer_interface.cc(592) LOG(INFO) Done! preprocessed 193652439 sentences.
+unigram_model_trainer.cc(265) LOG(INFO) Making suffix array...
+unigram_model_trainer.cc(269) LOG(INFO) Extracting frequent sub strings... node_num=9433658546
+unigram_model_trainer.cc(312) LOG(INFO) Initialized 1000095 seed sentencepieces
+trainer_interface.cc(598) LOG(INFO) Tokenizing input sentences with whitespace: 193652439
+trainer_interface.cc(609) LOG(INFO) Done! 15579538
+unigram_model_trainer.cc(602) LOG(INFO) Using 15579538 sentences for EM training
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=0 size=879491 obj=11.4142 num_tokens=164921596 num_tokens/piece=187.519
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=1 size=723696 obj=9.04979 num_tokens=167174486 num_tokens/piece=231.001
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=0 size=542746 obj=8.9761 num_tokens=168194265 num_tokens/piece=309.895
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=1 size=542273 obj=8.92586 num_tokens=168954386 num_tokens/piece=311.567
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=0 size=406698 obj=8.93736 num_tokens=170839676 num_tokens/piece=420.065
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=1 size=406679 obj=8.93466 num_tokens=170984405 num_tokens/piece=420.441
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=0 size=305007 obj=8.93946 num_tokens=173009228 num_tokens/piece=567.23
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=1 size=305003 obj=8.93855 num_tokens=173014336 num_tokens/piece=567.255
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=0 size=228752 obj=8.94166 num_tokens=175251213 num_tokens/piece=766.119
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=1 size=228752 obj=8.94083 num_tokens=175238602 num_tokens/piece=766.064
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=0 size=171564 obj=8.94741 num_tokens=177752299 num_tokens/piece=1036.07
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=1 size=171564 obj=8.94696 num_tokens=177731051 num_tokens/piece=1035.95
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=0 size=128673 obj=8.95398 num_tokens=180173196 num_tokens/piece=1400.24
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=1 size=128673 obj=8.95331 num_tokens=180162583 num_tokens/piece=1400.16
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=0 size=96504 obj=8.95869 num_tokens=182119826 num_tokens/piece=1887.17
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=1 size=96504 obj=8.95798 num_tokens=182122709 num_tokens/piece=1887.2
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=0 size=72378 obj=8.96206 num_tokens=183768006 num_tokens/piece=2539
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=1 size=72378 obj=8.96156 num_tokens=183776796 num_tokens/piece=2539.13
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=0 size=57200 obj=8.96438 num_tokens=184950439 num_tokens/piece=3233.4
+unigram_model_trainer.cc(618) LOG(INFO) EM sub_iter=1 size=57200 obj=8.96416 num_tokens=184949788 num_tokens/piece=3233.39
+trainer_interface.cc(687) LOG(INFO) Saving model: yaratexttokenizer_bart.model
+trainer_interface.cc(699) LOG(INFO) Saving vocabs: yaratexttokenizer_bart.vocab
